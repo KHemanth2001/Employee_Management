@@ -26,6 +26,7 @@ This project follows production-grade best practices such as layered architectur
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
+cd app
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```

@@ -9,8 +9,8 @@ from fastapi.responses import JSONResponse
 
 app=FastAPI(
     title="Employee Management",
-    docs_url="/employee/swagger/",
-    openapi_url="/employee/swagger/openapi.json"
+    docs_url="/docs",
+    redoc_url=None
 )
 
 Base.metadata.create_all(bind=engine)
